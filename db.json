@@ -1,0 +1,24 @@
+{
+  "notes": [
+    {
+      "id": "0243",
+      "content": "Test note",
+      "important": true
+    },
+    {
+      "id": "8ba8",
+      "content": "reducer defines how redux store works",
+      "important": false
+    },
+    {
+      "id": "9016",
+      "content": "state of store can contain any data",
+      "important": false
+    },
+    {
+      "id": "5bd3",
+      "content": "This is a new note",
+      "important": false
+    }
+  ]
+}
