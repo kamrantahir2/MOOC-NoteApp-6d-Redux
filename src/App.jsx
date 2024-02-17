@@ -1,5 +1,5 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { getNotes, createNote } from "./requests";
+import { getNotes, createNote, updateNote } from "./requests";
 
 const App = () => {
   const queryClient = useQueryClient();
