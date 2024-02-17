@@ -37,6 +37,7 @@ const App = () => {
   const result = useQuery({
     queryKey: ["notes"],
     queryFn: getNotes,
+    refetchOnWindowFocus: false,
   });
 
   if (result.isLoading) {

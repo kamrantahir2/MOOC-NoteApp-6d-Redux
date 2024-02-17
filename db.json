@@ -13,12 +13,17 @@
     {
       "id": "9016",
       "content": "state of store can contain any data",
-      "important": false
+      "important": true
     },
     {
       "id": "f697",
       "content": "This is a new note",
       "important": false
+    },
+    {
+      "id": "ed28",
+      "content": "Test note",
+      "important": true
     }
   ]
 }
