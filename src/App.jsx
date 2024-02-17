@@ -11,6 +11,13 @@ const App = () => {
     },
   });
 
+  const updateNoteMutation = useMutation({
+    mutationFn: updateNote,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["notes"] });
+    },
+  });
+
   const addNote = async (event) => {
     event.preventDefault();
     const content = event.target.note.value;
@@ -19,15 +26,13 @@ const App = () => {
   };
 
   const toggleImportance = (note) => {
-    console.log("toggle importance of", note.id);
+    updateNoteMutation.mutate({ ...note, important: !note.important });
   };
 
   const result = useQuery({
     queryKey: ["notes"],
     queryFn: getNotes,
   });
-
-  console.log(JSON.parse(JSON.stringify(result)));
 
   if (result.isLoading) {
     return <div>loading data...</div>;

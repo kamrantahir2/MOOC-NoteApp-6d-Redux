@@ -3,12 +3,12 @@
     {
       "id": "0243",
       "content": "Test note",
-      "important": true
+      "important": false
     },
     {
       "id": "8ba8",
       "content": "reducer defines how redux store works",
-      "important": false
+      "important": true
     },
     {
       "id": "9016",
